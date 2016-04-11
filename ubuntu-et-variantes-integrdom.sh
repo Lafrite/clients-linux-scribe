@@ -39,15 +39,10 @@
 
 # version 2.0 (avec proxy system)
 ###########################################################################
-#Paramétrage par défaut
-#Changez les valeurs, ainsi, il suffira de taper 'entrée' à chaque question
+# Import de la configuration de l'établissement
 ###########################################################################
-scribe_def_ip="192.168.220.10"
-proxy_def_ip="172.16.0.252"
-proxy_def_port="3128"
-proxy_gnome_noproxy="[ 'localhost', '127.0.0.0/8', '172.16.0.0/16', '192.168.0.0/16', '*.crdp-lyon.fr', '*.crdplyon.lan' ]"
-proxy_env_noproxy="localhost,127.0.0.1,192.168.0.0/16,172.16.0.0/16,.crdp-lyon.fr,.crdplyon.lan"
-pagedemarragepardefaut="https://lite.qwant.com"
+
+. config_etablissement
 
 #############################################
 # Run using sudo, of course.
